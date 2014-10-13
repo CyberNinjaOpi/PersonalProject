@@ -13,5 +13,21 @@ namespace FinalProject.DataModels
 		public string Link { get; set; }
 		public string Image { get; set; }
 		public int CategoryId { get; set; }
+		public virtual Category Category { get; set; }
+
+		public Content() { }
+		public Content(string title, string link, string image, int categoryid)
+		{
+			Title = title;
+			Link = link;
+			Image = image;
+			CategoryId = categoryid;
+		}
+		public void SetProps(Content content)
+		{
+			this.Title = content.Title;
+			this.Link = content.Link;
+			this.Image = content.Image;
+		}
 	}
 }

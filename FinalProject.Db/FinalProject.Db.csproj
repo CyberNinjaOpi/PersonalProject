@@ -55,11 +55,16 @@
     <Compile Include="Adapters\Data\FinalProjectAdapter.cs" />
     <Compile Include="Adapters\Interfaces\IFinalProjectAdapter.cs" />
     <Compile Include="ApplicationDbContext.cs" />
-    <Compile Include="Migrations\201410101851253_Initial.cs" />
-    <Compile Include="Migrations\201410101851253_Initial.Designer.cs">
-      <DependentUpon>201410101851253_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201410131643537_Initial.cs" />
+    <Compile Include="Migrations\201410131643537_Initial.Designer.cs">
+      <DependentUpon>201410131643537_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201410131837280_Second.cs" />
+    <Compile Include="Migrations\201410131837280_Second.Designer.cs">
+      <DependentUpon>201410131837280_Second.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Seeder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -73,8 +78,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201410101851253_Initial.resx">
-      <DependentUpon>201410101851253_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201410131643537_Initial.resx">
+      <DependentUpon>201410131643537_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201410131837280_Second.resx">
+      <DependentUpon>201410131837280_Second.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
